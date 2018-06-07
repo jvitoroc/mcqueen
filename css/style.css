@@ -1,0 +1,193 @@
+html, body{
+    height: 100%;
+}
+.header{
+    margin: 0 auto;
+    height: 100%;
+    display: table;
+    width: 850px;
+}
+.header-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+*{
+    box-sizing: border-box;
+}
+.nav{
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+.nav ul{
+    margin: 0 auto;
+}
+.nav ul li:hover a{
+    color: #fff !important;
+}
+.nav ul li{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.nav ul li:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    content: "";
+    width: 0px;
+    height: 0px;
+    transition: 0.2s;
+    z-index: -1;
+    background: #333;
+}
+.nav ul li:hover:after{
+    width: 90%;
+    height: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 45%);
+}
+.nav ul li.active a{
+    color: #000;
+}
+.nav ul li a{
+    display: block;
+    padding: 10px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #888;
+}
+h1.main-title{
+    font-family: "Cinzel";
+    text-align: center;
+    color: #666;
+    font-weight: 100;
+    font-size: 4em;
+    margin-top: 10px;
+}
+h4.sub-title{
+    font-family: "Roboto";
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-left: 54px;
+    font-size: 1em;
+}
+.sub-header{
+    text-align: center;
+    margin-top: 10px;
+}
+.ecommercial{
+    width: 3px;
+    height: 3px;
+    background: #666;
+    display: inline-block;
+    margin: 4px 6px;
+    border-radius: 50%;
+}
+.main{
+    width: 850px;
+    margin: -40px auto 0 auto;
+}
+.clearfix:after, .clearfix:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+.section-col:hover{
+    opacity: 1;
+}
+.sections-container{
+    width: 542px;
+    margin: 0 auto;
+}
+.section{
+    position: relative;
+}
+.sections-container > .section:nth-of-type(odd){
+    left: -20px;
+}
+.sections-container > .section:nth-of-type(even){
+    left: 20px;
+}
+.section-col{
+    float: left;
+    opacity: 0.7;
+    transition: 0.2s;
+    margin: 3px;
+    width: 265px;
+    height: 265px;
+}
+.section-col img{
+    width: 100%;
+    display: block;
+}
+.none{
+    display: none;
+}
+.section-separator{
+    width: 100%;
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 2em;
+    padding: 85px 0;
+    color: #ADADAD;
+}
+.section-separator:after,
+.section-separator:before{
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #ADADAD;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+}
+.section-col.section-col-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-family: "Roboto";
+    font-weight: 100;
+    border: 1px solid #DDD;
+}
+.footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.scroll-down{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.scroll-down img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    display: block;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.scroll-down.unactive{
+    opacity: 0 !important;
+}
+
+@keyframes blink{
+    from{opacity: 0.5}
+    to{opacity: 1}
+}

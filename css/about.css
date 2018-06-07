@@ -1,0 +1,31 @@
+.main{
+    margin-top: 0;
+}
+
+.me{
+    height: 250px;
+    background-image: url("../img/portfolio-wide.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 100px 10px #fff;
+}
+
+.h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about-me > p{
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    text-indent: 15px;
+    color: #444;
+}
+
+.about-me{
+    font-size: 1em;
+    font-family: "Roboto";
+    color: #666;
+    margin-top: 40px;
+}
