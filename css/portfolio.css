@@ -1,0 +1,49 @@
+.gallery{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.gallery:after{
+    content: "";
+    clear: both;
+}
+
+.gallery-item{
+    width: 25%;
+    float: left;
+}
+
+.gallery-item img{
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 850px){
+    .main{
+        width: 600px;
+    }
+    .gallery{
+        width: 550px;
+    }
+    .gallery-item{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .main{
+        width: 450px;
+    }
+    .gallery{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .main{
+        width: 350px;
+    }
+    .gallery{
+        width: 300px;
+    }
+}
