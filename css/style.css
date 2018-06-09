@@ -96,7 +96,8 @@ h4.sub-title{
     display: table;
     clear: both;
 }
-.section-col:hover{
+.section-col:hover,
+.section-col:active{
     opacity: 1;
 }
 .sections-container{
