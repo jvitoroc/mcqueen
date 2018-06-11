@@ -11,6 +11,7 @@
 .gallery-item{
     width: 25%;
     float: left;
+    padding: 5px;
 }
 
 .gallery-item img{
